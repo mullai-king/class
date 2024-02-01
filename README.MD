@@ -1,3 +1,19 @@
+# THIS IS BIKE COMMAND LINE APPLICATION 
+
+## Consepts used
+  - Class
+  - Object
+  - Spread oprator and basic conditions
+## Methods inside class
+```
+  - getDetails()
+  - startBike()
+  - stopBike()
+  - gearUp()
+  - gearDown()
+```
+### code
+```
 class Bike{
   constructor(brand,model,engineType,year,maxgear,fuelType){
     this.brand =brand;
@@ -8,7 +24,7 @@ class Bike{
     this.fuelType = fuelType;
     this.gearState =0;
     this.engineStarted = false;
-    this.allDetails = [brand,model,engineType,year,maxgear,fuelType]
+    this.allDetails = [brand,engineType,year,maxgear,fuelType]
   }
   getdetails(){
     console.log(...this.allDetails)
@@ -73,3 +89,23 @@ dreamNeo.gearDown();
 dreamNeo.gearDown();
 dreamNeo.gearDown();
 dreamNeo.gearDown();
+```
+### Output
+```
+Honda BS IV 2013 4 petrol
+Engine is starting...
+Engine Started
+Engine already started!
+Engine stopped
+Engine not yet started
+Engine is starting...
+Engine Started
+Gear shifted next .Now You're in 2 gear
+Gear shifted next .Now You're in 4 gear
+Gear shifted before.Now You're in 3 gear
+Gear shifted before.Now You're in 2 gear
+Gear shifted before.Now You're in 1 gear
+Gear shifted before.Now You're in 0 gear
+Gear state is Neutral
+Gear state is Neutral
+```
